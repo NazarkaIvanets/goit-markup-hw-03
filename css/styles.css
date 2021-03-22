@@ -1,0 +1,160 @@
+:root {
+  --main-text-color: #757575;
+  --title-color: #212121;
+  --bg-color: #2f303a;
+  --bg-button-color: #f5f4fa;
+  --white-color: #ffffff;
+  --link-color: #2196f3;
+  --logo-black: #000000;
+}
+
+body {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+address {
+  font-style: normal;
+  color: var(--white-color);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link-action:hover,
+.link-action:focus {
+  color: var(--link-color);
+}
+
+.buttons-portfolio:hover,
+.buttons-portfolio:focus {
+  background-color: var(--link-color);
+  color: var(--white-color);
+}
+
+.nav-list {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+}
+
+.whatwe-do-title,
+.ourteam-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.features-title {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.name-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.team-list-item {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.examples-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples-list-item {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.title {
+  color: var(--title-color);
+}
+
+.hidden-title {
+  visibility: hidden;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--bg-button-color);
+  border-style: none;
+  border-radius: 5px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.order-button {
+  background-color: var(--link-color);
+  color: var(--white-color);
+}
+
+.hero-section {
+  background-color: var(--bg-color);
+}
+
+.blue-logo,
+.black-logo,
+.white-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--link-color);
+}
+
+.black-logo {
+  color: var(--logo-black);
+}
+
+.white-logo {
+  color: var(--white-color);
+}
+
+.list {
+  list-style: none;
+}
+
+footer {
+  background-color: var(--bg-color);
+}
+
+.team-section-bgcolor {
+  background-color: var(--bg-button-color);
+}
