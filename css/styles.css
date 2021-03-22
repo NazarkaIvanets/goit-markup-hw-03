@@ -8,6 +8,16 @@
   --logo-black: #000000;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-weight: 400;
   font-family: 'Roboto', sans-serif;
@@ -17,12 +27,44 @@ body {
   color: var(--main-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 address {
   font-style: normal;
   color: var(--white-color);
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.examples-link {
   text-decoration: none;
   color: inherit;
 }
@@ -36,6 +78,14 @@ address {
 .buttons-portfolio:focus {
   background-color: var(--link-color);
   color: var(--white-color);
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .nav-list {
