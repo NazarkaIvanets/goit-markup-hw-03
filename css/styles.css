@@ -6,6 +6,8 @@
   --white-color: #ffffff;
   --link-color: #2196f3;
   --logo-black: #000000;
+  --examples-border-color: #eeeeee;
+  --grid-item: 1;
 }
 
 html {
@@ -35,6 +37,16 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  margin-bottom: 0px;
 }
 
 img {
@@ -69,8 +81,8 @@ address {
   color: inherit;
 }
 
-.link-action:hover,
-.link-action:focus {
+.link:hover,
+.link:focus {
   color: var(--link-color);
 }
 
@@ -88,6 +100,19 @@ address {
   margin-left: auto;
 }
 
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.grid-item {
+  flex-basis: calc((100% - 30px * var(--grid-item)) / var(--grid-item));
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .nav-list {
   font-weight: 500;
   line-height: 1.14;
@@ -95,11 +120,10 @@ address {
   color: var(--title-color);
 }
 
-.footer-contacts {
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .main-title {
+  display: block;
+  margin-bottom: 0px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -108,8 +132,10 @@ address {
   color: var(--white-color);
 }
 
-.whatwe-do-title,
-.ourteam-title {
+.what-we-do-title,
+.our-team-title {
+  display: block;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -119,41 +145,26 @@ address {
 
 .features-title {
   font-weight: 700;
-  line-height: 1.14;
+  line-height: 1.14px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
-.name-title {
+.team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
 
-.team-list-item {
-  font-size: 16px;
-  line-height: 1.18;
-}
-
 .examples-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.examples-list-item {
-  font-size: 16px;
-  line-height: 1.88;
-}
-
 .title {
   color: var(--title-color);
-}
-
-.hidden-title {
-  visibility: hidden;
 }
 
 .button {
@@ -169,13 +180,158 @@ address {
   cursor: pointer;
 }
 
+.navigation {
+  display: flex;
+  align-items: baseline;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo-link {
+  display: block;
+  margin-right: 93px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: baseline;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .order-button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
   background-color: var(--link-color);
   color: var(--white-color);
 }
 
+.buttons-portfolio {
+  min-width: 73px;
+  padding: 6px 22px;
+}
+
+.hero-content {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-section {
+  min-height: 100vh;
+  text-align: center;
+}
+
 .hero-section {
   background-color: var(--bg-color);
+}
+
+.features-content {
+  padding-top: 94px;
+}
+
+.features-item {
+  --grid-item: 4;
+}
+
+.doing-content {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.about-item {
+  --grid-item: 3;
+}
+
+.team-content {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  text-align: center;
+}
+
+.team-item {
+  --grid-item: 4;
+}
+
+.item-content {
+  padding: 30px 59px;
+}
+
+.footer-block {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.footer-contacts {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.item-contact {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.buttons-portfolio-block {
+  padding-top: 94px;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-item:not(:last-child) {
+  margin-right: 9px;
+}
+
+.examples-block {
+  padding-top: 50px;
+  padding-bottom: 94px;
+}
+
+.examples-item {
+  --grid-item: 3;
+}
+
+.examples-item-block {
+  padding: 20px 24px;
+  border-left: 1px solid var(--examples-border-color);
+  border-right: 1px solid var(--examples-border-color);
+  border-bottom: 1px solid var(--examples-border-color);
 }
 
 .blue-logo,
@@ -186,7 +342,7 @@ address {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--link-color);
+  color: #2196f3;
 }
 
 .black-logo {
