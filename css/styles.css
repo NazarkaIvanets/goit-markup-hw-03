@@ -120,6 +120,12 @@ address {
   color: var(--title-color);
 }
 
+.contact-list {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .main-title {
   display: block;
   margin-bottom: 0px;
@@ -147,6 +153,7 @@ address {
   font-weight: 700;
   line-height: 1.14px;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .team-title {
@@ -182,7 +189,7 @@ address {
 
 .navigation {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -232,29 +239,24 @@ header {
   padding: 6px 22px;
 }
 
-.hero-content {
+.hero-section {
+  min-height: 600px;
+  text-align: center;
+  background-color: var(--bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.hero-section {
-  min-height: 100vh;
-  text-align: center;
-}
-
-.hero-section {
-  background-color: var(--bg-color);
-}
-
-.features-content {
+.features-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-item {
   --grid-item: 4;
 }
 
-.doing-content {
+.what-we-do-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -263,7 +265,8 @@ header {
   --grid-item: 3;
 }
 
-.team-content {
+.team-section {
+  background-color: var(--bg-button-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -280,7 +283,8 @@ header {
   padding: 30px 59px;
 }
 
-.footer-block {
+.footer-section {
+  background-color: var(--bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -296,6 +300,7 @@ header {
 }
 
 .footer-contacts {
+  font-weight: 400;
   display: block;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -305,22 +310,19 @@ header {
   margin-bottom: 9px;
 }
 
-.buttons-portfolio-block {
+.portfolio-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-list {
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
 .buttons-item:not(:last-child) {
   margin-right: 9px;
-}
-
-.examples-block {
-  padding-top: 50px;
-  padding-bottom: 94px;
 }
 
 .examples-item {
@@ -355,12 +357,4 @@ header {
 
 .list {
   list-style: none;
-}
-
-footer {
-  background-color: var(--bg-color);
-}
-
-.team-section-bgcolor {
-  background-color: var(--bg-button-color);
 }
